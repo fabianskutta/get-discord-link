@@ -8,7 +8,7 @@ const avatar = urlParams.get("avatar");
 const tl = gsap.timeline({defaults: {duration: 0.2}})
 
 if (urlParams.has("id") == true) {
-  document.getElementById("info").innerHTML = `<img src="https://cdn.discordapp.com/avatars/${id}/${avatar}.png" alt=""><h2>${user}</h2><div class="link"><a target="_blank" href="https://discordapp.com/users/${id}">https://discordapp.com/users/${id}<a class="btn btn-small btn-primary" onclick="copy2Clipboard()"><i id="copy" class="far fa-copy"></i><i id="check" style="opacity:0;" class="fa fa-check"></i></a></a></div>`;
+  document.getElementById("info").innerHTML = `<img src="https://cdn.discordapp.com/avatars/${id}/${avatar}.png" alt=""><h2>${user}</h2><div class="link"><a target="_blank" href="https://discord.com/users/${id}">https://discord.com/users/${id}<a class="btn btn-small btn-primary" onclick="copy2Clipboard()"><i id="copy" class="far fa-copy"></i><i id="check" style="opacity:0;" class="fa fa-check"></i></a></a></div>`;
   document.getElementById("login").style.display = "none";
 }
 
